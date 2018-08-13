@@ -9,7 +9,7 @@ The  MTDuino-SFM2CWW001  represents  a  simple,  yet  powerful,  32-bit  extensi
 
 ### LASS WaterBox
 
-https://github.com/LinkItONEDevGroup/LASS/tree/master/WaterBox
+Github: https://github.com/LinkItONEDevGroup/LASS/tree/master/WaterBox
 
 Doc: https://paper.dropbox.com/doc/LASS-2018--AKCknLxIFqKCWGVK1c4lHIIQAg-y4zBZnbVZScIB3uVHC0CR
 
