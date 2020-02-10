@@ -24,6 +24,7 @@ void loop()
     sigfox_atcommand_tx("AT$RCZ?\r");          //sigfox AT Command: get RCZ
     sigfox_atcommand_tx("AT$ID?\r");           //sigfox AT Command: Get ID
     sigfox_atcommand_tx("AT$PAC?\r");          //sigfox AT Command: Get PAC
+    sigfox_atcommand_tx("AT$O=1,4\r");          //sigfox AT Command: Open Library
     delay(100);
   
      previousMillis = currentMillis;
