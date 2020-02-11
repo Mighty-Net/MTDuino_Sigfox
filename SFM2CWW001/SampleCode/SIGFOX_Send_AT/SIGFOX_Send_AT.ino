@@ -13,7 +13,8 @@ void setup() {
   pinMode(RF_PWEN,OUTPUT);       // Set RF_PWEN pin as output
   digitalWrite(LED_POW,HIGH);    // Set LED_POW to High
   digitalWrite(RF_PWEN,HIGH);    // Set RF_PWEN to High, and Sigfox module power ON
-
+  delay(5000);
+  sigfox_atcommand_tx("AT$O=1,4\r");          //sigfox AT Command: Open Library
 }
 void loop()
 {
@@ -24,7 +25,6 @@ void loop()
     sigfox_atcommand_tx("AT$RCZ?\r");          //sigfox AT Command: get RCZ
     sigfox_atcommand_tx("AT$ID?\r");           //sigfox AT Command: Get ID
     sigfox_atcommand_tx("AT$PAC?\r");          //sigfox AT Command: Get PAC
-    sigfox_atcommand_tx("AT$O=1,4\r");          //sigfox AT Command: Open Library
     delay(100);
   
      previousMillis = currentMillis;
